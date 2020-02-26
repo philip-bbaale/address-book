@@ -34,7 +34,7 @@ $(document).ready(function(){
 
         $("ul#addresses").text("");
         newContact.addresses.forEach(function(address) {
-        $("ul#addresses").append("<li>" + address.street + ", " + address.city + " " + address.County + "</li>");
+            $("ul#addresses").append("<li>" + address.fullAddress() + "</li>");
 });
     });
 
