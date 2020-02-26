@@ -9,6 +9,9 @@ function Address(street, city, county) {
     this.county = county;
   }
 
+  Address.prototype.fullAddress = function() {
+    return this.street + ", " + this.city + ", " + this.county;
+  }
 $(document).ready(function(){
     $("form#new-contact").submit(function(){
         event.preventDefault();
