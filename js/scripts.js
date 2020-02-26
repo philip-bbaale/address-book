@@ -3,6 +3,11 @@ function Contact(first, last){
     this.lastName = last;
     this.address = [];
 }
+function Address(street, city, county) {
+    this.street = street;
+    this.city = city;
+    this.county = county;
+  }
 
 $(document).ready(function(){
     $("form#new-contact").submit(function(){
